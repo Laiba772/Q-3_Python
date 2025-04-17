@@ -25,28 +25,26 @@ Create an interactive game where:
    - Same choice = Tie
 
 ---
-
 ## 🧠 Game Logic
 
-```python
-if player == computer:
-    print("It's a tie!")
-elif (player == 'rock' and computer == 'scissors') or \
-     (player == 'scissors' and computer == 'paper') or \
-     (player == 'paper' and computer == 'rock'):
-    print("Player wins!")
-else:
-    print("Computer wins!")
+The winner is decided based on these conditions:
+
+- If both the player and computer choose the same: **It’s a tie**
+- Rock beats Scissors → **Rock wins**
+- Scissors beats Paper → **Scissors wins**
+- Paper beats Rock → **Paper wins**
+
+The logic in code is based on simple `if-elif-else` statements to compare choices.
 
 ---
+
 ## 💻 How to Run the Program
 
 1. Make sure you have **Python** installed on your system.
 2. Save the code in a file named `rock_paper_scissors.py`.
 3. Open a terminal or command prompt.
-4. Navigate to the folder where your file is saved.
-5. Run the script using the following command:
+4. Navigate to the folder where the file is saved.
+5. Run the script with:
 
 ```bash
 python rock_paper_scissors.py
-```
